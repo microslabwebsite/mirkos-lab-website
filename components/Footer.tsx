@@ -22,11 +22,28 @@ const serviceLinks = [
 
 export default function Footer() {
   return (
-    <footer className='relative overflow-hidden bg-gradient-to-b from-[#fbfcff] to-[#f2f4ff]'>
-      <div className='absolute -left-24 top-0 h-48 w-48 rounded-full bg-[#02aebe]/5 blur-3xl' />
-      <div className='absolute -right-24 top-0 h-48 w-48 rounded-full bg-[#8851d4]/5 blur-3xl' />
+    <footer className='relative mt-24 bg-[#F0F5FD]'>
+      <div className='pointer-events-none absolute left-0 top-0 w-full -translate-y-[98%] overflow-hidden leading-none'>
+        <svg
+          viewBox='0 0 1440 150'
+          preserveAspectRatio='none'
+          className='h-24 w-full sm:h-28 lg:h-32'
+          aria-hidden='true'>
+          <path
+            d='M0,55
+           C140,85 260,105 400,92
+           C560,78 650,45 820,60
+           C990,76 1080,105 1230,92
+           C1320,84 1380,62 1440,58
+           L1440,150
+           L0,150
+           Z'
+            fill='#F0F5FD'
+          />
+        </svg>
+      </div>
 
-      <div className='relative mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:px-8 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.9fr_1.4fr] lg:gap-12 lg:px-10 lg:py-14'>
+      <div className='relative mx-auto grid max-w-7xl gap-8 px-6 pb-8 pt-2 sm:px-8 sm:pb-10 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.9fr_1.4fr] lg:gap-10 lg:px-10 lg:pb-10 lg:pt-3'>
         <div>
           <Link href='/' className='inline-block'>
             <Image
