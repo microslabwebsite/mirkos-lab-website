@@ -38,33 +38,51 @@ export default function Header() {
       <header className='relative z-50 w-full bg-white'>
         <div className='mx-auto max-w-7xl px-5 sm:px-6 lg:px-10'>
           <nav className='flex h-20 items-center justify-between lg:h-24'>
-            <Link href='/' className='shrink-0' onClick={closeMenu}>
-              <Image
-                src='/assets/logo.png'
-                alt='MiKros Lab Laboratorio Clínico'
-                width={190}
-                height={65}
-                priority
-                className='h-auto w-[145px] sm:w-[165px] lg:w-[190px]'
-              />
-            </Link>
+<Link
+  href='/'
+  className='flex shrink-0 items-center gap-2'
+  onClick={closeMenu}
+>
+  <Image
+    src='/assets/logo-icon.svg'
+    alt='MiKros Lab Icon'
+    width={65}
+    height={65}
+    priority
+    className='h-auto w-[55px] lg:w-[65px]'
+  />
+
+  <Image
+    src='/assets/logo-text.svg'
+    alt='MiKros Lab Laboratorio Clínico'
+    width={150}
+    height={50}
+    priority
+    className='h-auto w-[125px] lg:w-[150px]'
+  />
+</Link>
 
             <ul className='hidden items-center gap-10 lg:flex'>
               {links.map((link) => {
                 const isActive =
-                  link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
+                  link.href === '/'
+                    ? pathname === '/'
+                    : pathname.startsWith(link.href);
 
                 return (
                   <li key={link.href}>
                     <Link
                       href={link.href}
                       className={`relative block py-3 text-sm font-semibold transition-colors duration-200 ${
-                        isActive ? 'text-[#08a8bc]' : 'text-[#111c5c] hover:text-[#08a8bc]'
-                      }`}>
+                        isActive
+                          ? 'text-[#65b6b7]'
+                          : 'text-[#2f3b5f] hover:text-[#65b6b7]'
+                      }`}
+                    >
                       {link.label}
 
                       <span
-                        className={`absolute -bottom-0.5 left-0 h-[2px] bg-[#08a8bc] transition-all duration-200 ${
+                        className={`absolute -bottom-0.5 left-0 h-[2px] bg-[#65b6b7] transition-all duration-200 ${
                           isActive ? 'w-full' : 'w-0'
                         }`}
                       />
@@ -78,7 +96,8 @@ export default function Header() {
               <button
                 type='button'
                 onClick={openSearch}
-                className='hidden items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#8851d4] to-[#02aebe] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(86,89,190,0.2)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(86,89,190,0.3)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#08a8bc]/20 lg:flex'>
+                className='hidden items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#9d8cb6] to-[#65b6b7] px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(101,182,183,0.2)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_28px_rgba(157,140,182,0.25)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#65b6b7]/20 lg:flex'
+              >
                 <FileSearch size={18} strokeWidth={2} />
                 Buscar
               </button>
@@ -88,8 +107,13 @@ export default function Header() {
                 onClick={toggleMenu}
                 aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
                 aria-expanded={isMenuOpen}
-                className='flex h-11 w-11 items-center justify-center rounded-full border border-[#e8ebf4] bg-white text-[#111c5c] shadow-sm transition-colors hover:bg-[#f3f5fb] lg:hidden'>
-                {isMenuOpen ? <X size={26} strokeWidth={2} /> : <Menu size={26} strokeWidth={2} />}
+                className='flex h-11 w-11 items-center justify-center rounded-full border border-[#65b6b7]/20 bg-white text-[#2f3b5f] shadow-sm transition-colors hover:bg-[#65b6b7]/10 hover:text-[#65b6b7] lg:hidden'
+              >
+                {isMenuOpen ? (
+                  <X size={26} strokeWidth={2} />
+                ) : (
+                  <Menu size={26} strokeWidth={2} />
+                )}
               </button>
             </div>
           </nav>
@@ -97,14 +121,17 @@ export default function Header() {
           <div
             className={`grid overflow-hidden transition-all duration-300 ease-in-out lg:hidden ${
               isMenuOpen
-                ? 'grid-rows-[1fr] border-t border-[#edf0fb] pb-6 opacity-100'
+                ? 'grid-rows-[1fr] border-t border-[#65b6b7]/15 pb-6 opacity-100'
                 : 'grid-rows-[0fr] opacity-0'
-            }`}>
+            }`}
+          >
             <div className='min-h-0'>
               <ul className='flex flex-col pt-4'>
                 {links.map((link) => {
                   const isActive =
-                    link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
+                    link.href === '/'
+                      ? pathname === '/'
+                      : pathname.startsWith(link.href);
 
                   return (
                     <li key={link.href}>
@@ -113,12 +140,15 @@ export default function Header() {
                         onClick={closeMenu}
                         className={`flex items-center justify-between rounded-xl px-4 py-3.5 text-base font-semibold transition-colors ${
                           isActive
-                            ? 'bg-[#eefafb] text-[#08a8bc]'
-                            : 'text-[#111c5c] hover:bg-[#f6f7fb] hover:text-[#08a8bc]'
-                        }`}>
+                            ? 'bg-[#65b6b7]/10 text-[#65b6b7]'
+                            : 'text-[#2f3b5f] hover:bg-[#65b6b7]/10 hover:text-[#65b6b7]'
+                        }`}
+                      >
                         {link.label}
 
-                        {isActive && <span className='h-2 w-2 rounded-full bg-[#08a8bc]' />}
+                        {isActive && (
+                          <span className='h-2 w-2 rounded-full bg-[#65b6b7]' />
+                        )}
                       </Link>
                     </li>
                   );
@@ -128,7 +158,8 @@ export default function Header() {
               <button
                 type='button'
                 onClick={openSearch}
-                className='mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#8851d4] to-[#02aebe] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(86,89,190,0.2)] transition hover:opacity-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#08a8bc]/20'>
+                className='mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#9d8cb6] to-[#65b6b7] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_8px_20px_rgba(101,182,183,0.2)] transition hover:opacity-95 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#65b6b7]/20'
+              >
                 <FileSearch size={18} strokeWidth={2} />
                 Buscar
               </button>
@@ -137,7 +168,10 @@ export default function Header() {
         </div>
       </header>
 
-      <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+      <SearchModal
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
+      />
     </>
   );
 }

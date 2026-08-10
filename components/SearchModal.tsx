@@ -8,10 +8,7 @@ type SearchModalProps = {
   onClose: () => void;
 };
 
-export default function SearchModal({
-  isOpen,
-  onClose,
-}: SearchModalProps) {
+export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [message, setMessage] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -50,44 +47,27 @@ export default function SearchModal({
       return;
     }
 
-    const walker = document.createTreeWalker(
-      document.body,
-      NodeFilter.SHOW_TEXT,
-      {
-        acceptNode(node) {
-          const parentElement = node.parentElement;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parentElement = node.parentElement;
 
-          if (!parentElement) {
-            return NodeFilter.FILTER_REJECT;
-          }
+        if (!parentElement) {
+          return NodeFilter.FILTER_REJECT;
+        }
 
-          const ignoredTags = [
-            'SCRIPT',
-            'STYLE',
-            'NOSCRIPT',
-            'INPUT',
-            'TEXTAREA',
-          ];
+        const ignoredTags = ['SCRIPT', 'STYLE', 'NOSCRIPT', 'INPUT', 'TEXTAREA'];
 
-          const isInsideSearchModal = parentElement.closest(
-            '[data-search-modal]'
-          );
+        const isInsideSearchModal = parentElement.closest('[data-search-modal]');
 
-          if (
-            ignoredTags.includes(parentElement.tagName) ||
-            isInsideSearchModal
-          ) {
-            return NodeFilter.FILTER_REJECT;
-          }
+        if (ignoredTags.includes(parentElement.tagName) || isInsideSearchModal) {
+          return NodeFilter.FILTER_REJECT;
+        }
 
-          return node.textContent
-            ?.toLowerCase()
-            .includes(normalizedTerm)
-            ? NodeFilter.FILTER_ACCEPT
-            : NodeFilter.FILTER_REJECT;
-        },
-      }
-    );
+        return node.textContent?.toLowerCase().includes(normalizedTerm)
+          ? NodeFilter.FILTER_ACCEPT
+          : NodeFilter.FILTER_REJECT;
+      },
+    });
 
     const matchingNode = walker.nextNode();
 
@@ -121,7 +101,7 @@ export default function SearchModal({
     }, 100);
   }
 
-  function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
+  function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
     findTextOnPage(searchTerm);
   }
@@ -131,91 +111,81 @@ export default function SearchModal({
   return (
     <div
       data-search-modal
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="search-title"
-      className="fixed inset-0 z-[100] flex items-end justify-center bg-[#111c5c]/35 backdrop-blur-sm sm:items-start sm:px-4 sm:pt-24"
-      onMouseDown={onClose}
-    >
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='search-title'
+      className='fixed inset-0 z-[100] flex items-end justify-center bg-[#2f3b5f]/35 backdrop-blur-sm sm:items-start sm:px-4 sm:pt-24'
+      onMouseDown={onClose}>
       <div
-        className="max-h-[90dvh] w-full overflow-y-auto rounded-t-[30px] border border-white/70 bg-white shadow-[0_-20px_60px_rgba(17,28,92,0.22)] sm:max-h-none sm:max-w-xl sm:rounded-[28px] sm:shadow-[0_30px_80px_rgba(17,28,92,0.25)]"
-        onMouseDown={(event) => event.stopPropagation()}
-      >
-        <div className="relative overflow-hidden bg-gradient-to-r from-[#f3fbfc] via-white to-[#f8f3ff] px-5 pb-6 pt-5 sm:p-8">
-          <div className="mx-auto mb-5 h-1.5 w-12 rounded-full bg-[#dfe4f0] sm:hidden" />
+        className='max-h-[90dvh] w-full overflow-y-auto rounded-t-[30px] border border-white/70 bg-white shadow-[0_-20px_60px_rgba(47,59,95,0.22)] sm:max-h-none sm:max-w-xl sm:rounded-[28px] sm:shadow-[0_30px_80px_rgba(47,59,95,0.25)]'
+        onMouseDown={(event) => event.stopPropagation()}>
+        <div className='relative overflow-hidden bg-gradient-to-r from-[#65b6b7]/10 via-white to-[#9d8cb6]/10 px-5 pb-6 pt-5 sm:p-8'>
+          <div className='mx-auto mb-5 h-1.5 w-12 rounded-full bg-[#9d8cb6]/25 sm:hidden' />
 
-          <div className="absolute -right-12 -top-16 h-40 w-40 rounded-full bg-[#8851d4]/10 blur-2xl" />
-          <div className="absolute -bottom-20 -left-14 h-40 w-40 rounded-full bg-[#02aebe]/10 blur-2xl" />
+          <div className='absolute -right-12 -top-16 h-40 w-40 rounded-full bg-[#9d8cb6]/10 blur-2xl' />
+          <div className='absolute -bottom-20 -left-14 h-40 w-40 rounded-full bg-[#65b6b7]/10 blur-2xl' />
 
-          <div className="relative flex items-start justify-between gap-3 sm:gap-4">
-            <div className="flex min-w-0 items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8851d4] to-[#02aebe] text-white shadow-md sm:h-11 sm:w-11">
-                <FileSearch size={21} />
-              </div>
+          <div className='relative flex items-start justify-between gap-3 sm:gap-4'>
+            <div className='flex min-w-0 items-center gap-3'>
+              <FileSearch size={28} strokeWidth={1.8} className='shrink-0 text-[#65b6b7]' />
 
-              <div className="min-w-0">
-                <h2
-                  id="search-title"
-                  className="text-base font-bold text-[#111c5c] sm:text-xl"
-                >
+              <div className='min-w-0'>
+                <h2 id='search-title' className='text-base font-bold text-[#2f3b5f] sm:text-xl'>
                   Buscar en esta página
                 </h2>
 
-                <p className="mt-1 text-xs leading-5 text-[#6d78a5] sm:text-sm">
+                <p className='mt-1 text-xs leading-5 text-[#6f7791] sm:text-sm'>
                   Encuentra palabras dentro del contenido visible.
                 </p>
               </div>
             </div>
 
             <button
-              type="button"
+              type='button'
               onClick={handleClose}
-              aria-label="Cerrar búsqueda"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[#111c5c] transition hover:bg-white hover:text-[#08a8bc] sm:h-10 sm:w-10"
-            >
+              aria-label='Cerrar búsqueda'
+              className='flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-[#2f3b5f] transition hover:bg-white hover:text-[#65b6b7] sm:h-10 sm:w-10'>
               <X size={22} />
             </button>
           </div>
 
-          <form onSubmit={handleSubmit} className="relative mt-5 sm:mt-6">
+          <form onSubmit={handleSubmit} className='relative mt-5 sm:mt-6'>
             <Search
               size={20}
-              className="pointer-events-none absolute left-4 top-7 -translate-y-1/2 text-[#08a8bc] sm:top-1/2"
+              className='pointer-events-none absolute left-4 top-7 -translate-y-1/2 text-[#65b6b7] sm:top-1/2'
             />
 
             <input
               ref={inputRef}
-              type="search"
+              type='search'
               value={searchTerm}
               onChange={(event) => {
                 setSearchTerm(event.target.value);
                 setMessage('');
               }}
-              placeholder="Escribe el texto que deseas encontrar"
-              className="h-14 w-full rounded-2xl border border-[#e5e9f5] bg-white pl-12 pr-4 text-sm text-[#111c5c] shadow-[0_8px_24px_rgba(20,40,90,0.06)] outline-none transition placeholder:text-[#9aa3c0] focus:border-[#08a8bc] focus:ring-4 focus:ring-[#08a8bc]/10 sm:pr-28"
+              placeholder='Escribe el texto que deseas encontrar'
+              className='h-14 w-full rounded-2xl border border-[#65b6b7]/25 bg-white pl-12 pr-4 text-sm text-[#2f3b5f] shadow-[0_8px_24px_rgba(47,59,95,0.06)] outline-none transition placeholder:text-[#9aa3b5] focus:border-[#65b6b7] focus:ring-4 focus:ring-[#65b6b7]/10 sm:pr-28'
             />
 
             <button
-              type="submit"
-              className="mt-3 flex h-12 w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#8851d4] to-[#02aebe] px-5 text-sm font-semibold text-white transition hover:opacity-90 sm:absolute sm:right-2 sm:top-1/2 sm:mt-0 sm:h-auto sm:w-auto sm:-translate-y-1/2 sm:py-2.5"
-            >
+              type='submit'
+              className='mt-3 flex h-12 w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#9d8cb6] to-[#65b6b7] px-5 text-sm font-semibold text-white transition hover:opacity-90 sm:absolute sm:right-2 sm:top-1/2 sm:mt-0 sm:h-auto sm:w-auto sm:-translate-y-1/2 sm:py-2.5'>
               Buscar
             </button>
           </form>
 
           {message && (
             <p
-              role="status"
-              className="relative mt-4 rounded-xl bg-white/70 px-4 py-3 text-sm text-[#6d78a5]"
-            >
+              role='status'
+              className='relative mt-4 rounded-xl bg-white/75 px-4 py-3 text-sm text-[#6f7791]'>
               {message}
             </p>
           )}
         </div>
 
-        <div className="flex items-center justify-center border-t border-[#edf0f8] bg-[#fafbfe] px-6 py-3 text-xs text-[#8a93b1] sm:justify-between">
+        <div className='flex items-center justify-center border-t border-[#65b6b7]/15 bg-[#ffffff] px-6 py-3 text-xs text-[#7f879c] sm:justify-between'>
           <span>Enter para buscar</span>
-          <span className="hidden sm:inline">Esc para cerrar</span>
+          <span className='hidden sm:inline'>Esc para cerrar</span>
         </div>
       </div>
     </div>
