@@ -1,9 +1,15 @@
+import AboutUsHero from '@/components/about-us/AboutUsHero';
+import BenefitsSection from '@/components/about-us/BenefitsSection';
+import ValuesSection from '@/components/about-us/ValuesSection';
+import ReviewsSection from '@/components/about-us/ReviewsSection';
+
 export default function AboutUs() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h1>Nosotros</h1>
-      </section>
+    <main className='min-h-screen bg-white'>
+      <AboutUsHero />
+      <ValuesSection />
+      <BenefitsSection />
+      <ReviewsSection/>
     </main>
   );
 }
