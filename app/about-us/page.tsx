@@ -5,11 +5,11 @@ import ReviewsSection from '@/components/about-us/ReviewsSection';
 
 export default function AboutUs() {
   return (
-    <main className='min-h-screen bg-white'>
+    <main className='min-h-screen '>
       <AboutUsHero />
       <ValuesSection />
       <BenefitsSection />
-      <ReviewsSection/>
+      <ReviewsSection />
     </main>
   );
 }
