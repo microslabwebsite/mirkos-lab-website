@@ -179,7 +179,7 @@ export default function Footer() {
               <div className='text-sm leading-6 text-[#2f3b5f]'>
                 <div className='flex flex-wrap gap-x-3'>
                   <span className='font-semibold'>Horario</span>
-                  <span>Lun - Vie: 6:30 am - 1:00 pm</span>
+                  <span>Lun - Vie: 6:30 am - 12:30 md pm</span>
                 </div>
 
                 <p className='sm:pl-[67px]'>Sáb: 7:00 am - 1:00 pm</p>
