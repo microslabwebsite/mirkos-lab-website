@@ -33,7 +33,7 @@ export default function BenefitsSection() {
           ¿Por qué elegir <span className='text-[#9d8cb6]'>MiKros Lab?</span>
         </h2>
 
-        <div className='mx-auto mt-3 h-[2px] w-12 bg-[#65b6b7]' />
+        <div className='mx-auto mt-3 h-1 w-12 rounded-full bg-[#65b6b7]' />
       </div>
 
       <div className='mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4'>
