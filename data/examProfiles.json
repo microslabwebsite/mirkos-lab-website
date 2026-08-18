@@ -1,0 +1,256 @@
+[
+  {
+    "id": "hormonal-masculino",
+    "profile": "Hormonal masculino",
+    "price": "₡40.000",
+    "includes": [
+      "SHBG (Globulina fijadora de hormonas sexuales)",
+      "Testosterona total",
+      "Testosterona Libre",
+      "Antígeno Prostático",
+      "Hemograma de regalía"
+    ]
+  },
+  {
+    "id": "hombre",
+    "profile": "Hombre",
+    "price": "₡55.000",
+    "includes": [
+      "Hemograma",
+      "Examen general de orina",
+      "Frotis de heces por parasitos",
+      "Acido Urico",
+      "Colesterol Total",
+      "Colesterol LDL",
+      "HDL",
+      "Triglicerios",
+      "Glicemia",
+      "Nitrogeno Ureico",
+      "Creatinina",
+      "AST/TGO",
+      "ALT/TGP",
+      "Albúmina",
+      "Bilirrubina total",
+      "Bilirrubina directa",
+      "GGT",
+      "DHL",
+      "CK (creatin quinasa)",
+      "Vitamina D",
+      "Antígeno Prostático"
+    ]
+  },
+  {
+    "id": "hormonal-femenino",
+    "profile": "Hormonal femenino",
+    "price": "₡40.000",
+    "includes": [
+      "LH (Hormona Luteinizante)",
+      "FSH (Hormona Foliculo Estimulante)",
+      "Prolactina",
+      "Progesterona",
+      "hemogtama de regalía"
+    ]
+  },
+  {
+    "id": "mujer",
+    "profile": "Mujer",
+    "price": "₡55.000",
+    "includes": [
+      "Hemograma",
+      "Examen general de orina",
+      "Frotis de heces por parasitos",
+      "Acido Urico",
+      "Colesterol Total",
+      "Colesterol LDL",
+      "HDL",
+      "Triglicerios",
+      "Glicemia",
+      "Nitrogeno Ureico",
+      "Creatinina",
+      "AST/TGO",
+      "ALT/TGP",
+      "Albúmina",
+      "Bilirrubina total",
+      "Bilirrubina directa",
+      "GGT",
+      "DHL",
+      "CK (creatin quinasa)",
+      "Vitamina D",
+      "TSH"
+    ]
+  },
+  {
+    "id": "ets-orina-pcr",
+    "profile": "ETS en orina por PCR",
+    "price": "₡50.000",
+    "includes": [
+      "Chlamydia trachomatis",
+      "Chlamydia LGV",
+      "Neisseria gonorrhoeae",
+      "Mycoplasma genitalium",
+      "Mycoplasma hominis",
+      "Trichomonas vaginalis",
+      "Treponema pallidum",
+      "Ureaplasma urealyticum",
+      "Ureaplasma parvum",
+      "Herpes Simplex 1 y 2",
+      "Haemophilus ducreyi",
+      "Varicela-Zoster virus"
+    ]
+  },
+  {
+    "id": "completo",
+    "profile": "Completo",
+    "price": "₡30.000",
+    "includes": [
+      "Hemograma",
+      "Examen general de orina",
+      "Frotis de heces por parasitos",
+      "Acido Urico",
+      "Colesterol Total",
+      "Colesterol LDL",
+      "HDL",
+      "Triglicerios",
+      "Glicemia",
+      "Nitrogeno Ureico",
+      "Creatinina",
+      "AST/TGO",
+      "ALT/TGP",
+      "Albúmina",
+      "Bilirrubina total",
+      "Bilirrubina directa",
+      "GGT",
+      "DHL",
+      "CK (creatin quinasa)"
+    ]
+  },
+    {
+    "id": "basico",
+    "profile": "Basico",
+    "price": "₡20.000",
+    "includes": [
+      "Hemograma",
+      "Examen general de orina",
+      "Frotis de heces por parasitos",
+      "Acido Urico",
+      "Colesterol Total",
+      "Colesterol LDL",
+      "HDL",
+      "Triglicerios",
+      "Glicemia",
+      "Nitrogeno Ureico",
+      "Creatinina"
+    ]
+  },
+    {
+    "id": "ets-orina-sangre",
+    "profile": "ETS en orina y sangre",
+    "price": "₡65.000",
+    "includes": [
+      "Chlamydia trachomatis",
+      "Chlamydia LGV",
+      "Neisseria gonorrhoeae",
+      "Mycoplasma genitalium",
+      "Mycoplasma hominis",
+      "Trichomonas vaginalis",
+      "Treponema pallidum",
+      "Ureaplasma urealyticum",
+      "Ureaplasma parvum",
+      "Herpes Simplex 1 y 2",
+      "Haemophilus ducreyi",
+      "Varicela-Zoster virus",
+      "HIV",
+      "Hepatitis B"
+    ]
+  },
+{
+    "id": "ets-sangre",
+    "profile": "ETS en sangre",
+    "price": "₡30.000",
+    "includes": [
+      "Hepatitis B",
+      "HIV",
+      "Sífilis"
+    ]
+  },
+  {
+    "id": "infantil",
+    "profile": "Infantil",
+    "price": "₡12.000",
+    "includes": [
+      "Hemograma",
+      "Examen general de orina",
+      "Frotis de heces por parasitos"
+    ]
+  },
+
+  {
+    "id": "tiroideo-1",
+    "profile": "Tiroideo 1",
+    "price": "₡26.000",
+    "includes": [
+      "TSH",
+      "T3",
+      "T4"
+    ]
+  },
+  {
+    "id": "tiroideo-2",
+    "profile": "Tiroideo 2",
+    "price": "₡20.000",
+    "includes": [
+      "TSH",
+      "T4Libre"
+    ]
+  },
+  {
+    "id": "sexo-fetal",
+    "profile": "Sexo fetal",
+    "price": "₡55.000",
+    "includes": [],
+    "note": "desde la semana 10 de embarazo"
+  },
+  {
+    "id": "deteccion-molecular-vph",
+    "profile": "Deteccion molecular VPH",
+    "price": "₡45.000",
+    "details": {
+      "genotypes": 28,
+      "lowRisk": [
+        "6",
+        "11",
+        "40",
+        "42",
+        "43",
+        "44",
+        "45",
+        "54",
+        "61",
+        "70"
+      ],
+      "highRisk": [
+        "16",
+        "18",
+        "26",
+        "31",
+        "33",
+        "35",
+        "39",
+        "45",
+        "51",
+        "52",
+        "53",
+        "56",
+        "58",
+        "59",
+        "68",
+        "69",
+        "73",
+        "82"
+      ],
+      "intermediateRisk": [
+        "66"
+      ]
+    }
+  }
+]
