@@ -110,7 +110,7 @@ export default function ExamsSection({ search }: ExamsSectionProps) {
       <div className='mx-auto max-w-7xl px-5 sm:px-8 lg:px-12'>
         <div className='mb-10 text-center sm:mb-12'>
           <h2 className='text-3xl font-bold text-[#18264d] sm:text-4xl'>
-            Nuestros <span className='text-[#9d8cb6]'>exámenes</span>
+            Exámenes
           </h2>
 
           <div className='mx-auto mt-3 h-1 w-12 rounded-full bg-[#65b6b7]' />
