@@ -1,14 +1,14 @@
 import { CalendarDays, TestTube2, Microscope, FileText, ArrowRight } from 'lucide-react';
 
 const steps = [
-  {
-    number: '1',
-    icon: CalendarDays,
-    title: 'Coordina tu cita',
-    description: 'Contáctanos por WhatsApp, llamada o correo para coordinar tu cita.',
-    color: '#9d8cb6',
-    tint: 'rgba(157, 140, 182, 0.14)',
-  },
+{
+  number: '1',
+  icon: CalendarDays,
+  title: 'Visita MiKros Lab',
+  description: 'Puedes coordinar tu cita o visitarnos cuando gustes.',
+  color: '#9d8cb6',
+  tint: 'rgba(157, 140, 182, 0.14)',
+},
   {
     number: '2',
     icon: TestTube2,
