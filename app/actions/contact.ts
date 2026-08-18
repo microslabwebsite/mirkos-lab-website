@@ -1,7 +1,7 @@
 'use server';
 
 import { Resend } from 'resend';
-import type { ContactFormState } from '@/lib/contact-form';
+import type { ContactFormState } from '@/components/contact/ContactForm';
 
 const CONTACT_TO_EMAIL = 'mickroslabwebsite@gmail.com';
 
