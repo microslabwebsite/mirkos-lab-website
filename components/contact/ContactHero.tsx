@@ -19,7 +19,7 @@ const characters = [
   {
     src: '/assets/giardia.svg',
     className:
-      'right-[2%] top-[14%] w-16 sm:w-20 md:right-[3%] md:top-[18%] md:w-20 lg:right-[2%] lg:top-[13%] lg:w-24',
+      'right-[6%] top-[14%] w-16 sm:right-[7%] sm:w-20 md:right-[6%] md:top-[18%] md:w-20 lg:right-[6%] lg:top-[13%] lg:w-24',
   },
 ];
 
@@ -28,7 +28,7 @@ const bubbles = [
   'left-[20%] top-[52%] w-2 md:w-2.5',
   'left-[43%] top-[10%] w-2.5 md:w-3',
   'right-[19%] top-[7%] w-2 md:w-2.5',
-  'right-[3%] top-[47%] w-2.5 md:w-3',
+  'right-[6%] top-[47%] w-2.5 md:w-3',
   'bottom-[15%] left-[55%] w-2 md:w-2.5',
 ];
 
@@ -39,13 +39,20 @@ export default function ContactHero() {
         <div className='relative min-h-[330px] sm:min-h-[360px] md:min-h-[390px] lg:min-h-[420px]'>
           <div className='relative z-10 grid min-h-[330px] grid-cols-1 items-center gap-8 py-10 sm:min-h-[360px] md:min-h-[390px] md:grid-cols-[42%_58%] md:gap-6 md:py-12 lg:min-h-[420px] lg:grid-cols-[40%_60%] lg:py-14'>
             <div className='relative z-30 max-w-lg text-left'>
-              <h1 className='text-4xl font-bold tracking-[-0.03em] text-[#18264d] sm:text-5xl lg:text-[58px]'>
-                Contacto
+              <h1 className='text-4xl font-bold tracking-[-0.03em] text-[#18264d] sm:text-5xl md:text-[44px] lg:text-[52px] xl:text-[58px]'>
+                Contáctanos
               </h1>
 
-              <p className='mt-7 max-w-[460px] text-sm leading-7 text-[#334175] sm:text-base sm:leading-8 lg:text-lg lg:leading-9'>
-                Estamos aquí para ayudarte. Contáctanos por cualquiera de nuestros medios o envíanos
-                tus consultas completando el formulario.
+              <p className='mt-5 max-w-[420px] text-sm leading-7 text-[#334175] sm:text-base sm:leading-8 md:mt-4 md:max-w-[390px] lg:mt-5 lg:max-w-[440px]'>
+                por cualquiera de nuestros medios o{' '}
+                <span className='font-bold text-[#65b6b7]'>
+                  envíanos tus consultas
+                </span>{' '}
+                completando el formulario.
+                <span className='font-bold text-[#9d8cb6]'>
+                  {' '}
+                  Estamos aquí para ayudarte.
+                </span>
               </p>
             </div>
 
@@ -74,51 +81,90 @@ export default function ContactHero() {
             </div>
           </div>
 
-          <div className='pointer-events-none absolute bottom-4 right-0 z-0  h-[180px] w-[62%] md:block lg:bottom-2 lg:h-[205px] lg:w-[64%]'>
+          <div className='pointer-events-none absolute bottom-[64px] right-0 z-0 h-[190px] w-[72%] sm:bottom-[72px] sm:h-[205px] sm:w-[70%] md:bottom-[80px] md:h-[225px] md:w-[68%] lg:bottom-[90px] lg:h-[245px] lg:w-[70%]'>
             <svg
               viewBox='0 0 1000 260'
               preserveAspectRatio='none'
               className='h-full w-full'
-              aria-hidden='true'
-            >
+              aria-hidden='true'>
+              <defs>
+                <linearGradient
+                  id='contact-turquoise-wave'
+                  x1='0'
+                  y1='0'
+                  x2='1000'
+                  y2='0'
+                  gradientUnits='userSpaceOnUse'>
+                  <stop offset='0%' stopColor='#65b6b7' stopOpacity='0.05' />
+                  <stop offset='45%' stopColor='#65b6b7' stopOpacity='0.13' />
+                  <stop offset='100%' stopColor='#65b6b7' stopOpacity='0.28' />
+                </linearGradient>
+
+                <linearGradient
+                  id='contact-violet-wave'
+                  x1='0'
+                  y1='0'
+                  x2='1000'
+                  y2='0'
+                  gradientUnits='userSpaceOnUse'>
+                  <stop offset='0%' stopColor='#9d8cb6' stopOpacity='0.03' />
+                  <stop offset='50%' stopColor='#9d8cb6' stopOpacity='0.11' />
+                  <stop offset='100%' stopColor='#9d8cb6' stopOpacity='0.24' />
+                </linearGradient>
+              </defs>
+
               <path
                 d='
-                  M40 175
-                  C140 142 245 133 350 145
-                  C485 162 600 139 720 103
-                  C825 72 910 43 1000 10
+                  M 20 202
 
-                  L1000 94
+                  C 105 181, 186 158, 275 153
+                  C 372 147, 455 165, 544 170
+                  C 625 175, 696 165, 758 140
 
-                  C900 112 820 137 710 166
-                  C590 198 470 211 350 195
-                  C230 180 135 185 65 192
+                  C 822 114, 868 77, 908 46
+                  C 944 18, 974 5, 1010 0
 
-                  C55 187 47 181 40 175
+                  L 1010 88
+
+                  C 975 100, 946 117, 915 140
+                  C 872 172, 826 198, 766 216
+                  C 690 239, 610 239, 524 224
+
+                  C 433 208, 350 194, 270 196
+                  C 184 198, 104 211, 55 211
+
+                  C 39 211, 28 207, 20 202
+
                   Z
                 '
-                fill='#65b6b7'
-                opacity='0.28'
+                fill='url(#contact-turquoise-wave)'
               />
 
               <path
                 d='
-                  M125 218
-                  C220 193 315 192 425 203
-                  C555 216 680 190 790 157
-                  C875 132 945 103 1000 78
+                  M 112 229
 
-                  L1000 172
+                  C 188 207, 270 196, 358 202
+                  C 452 208, 540 222, 630 214
+                  C 708 207, 772 184, 825 153
 
-                  C925 187 850 204 760 224
-                  C645 248 535 254 420 239
-                  C310 225 215 229 150 233
+                  C 878 122, 918 86, 949 61
+                  C 971 43, 991 32, 1010 27
 
-                  C141 228 133 223 125 218
+                  L 1010 139
+
+                  C 984 148, 960 160, 936 178
+                  C 899 205, 856 225, 805 239
+                  C 735 258, 664 260, 588 251
+
+                  C 498 240, 417 228, 335 230
+                  C 260 232, 194 241, 148 240
+
+                  C 132 240, 120 235, 112 229
+
                   Z
                 '
-                fill='#9d8cb6'
-                opacity='0.22'
+                fill='url(#contact-violet-wave)'
               />
             </svg>
           </div>

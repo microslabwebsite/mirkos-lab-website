@@ -3,98 +3,103 @@ import Image from 'next/image';
 const characters = [
   {
     src: '/assets/green-bacteria.svg',
-    className:
-      'left-[8%] top-[2%] w-14 sm:w-16 md:left-[10%] md:top-[0%] md:w-16 lg:w-18',
+    className: 'left-[10%] top-[1%] w-[82px] sm:w-[92px] md:left-[11%] md:w-[98px] lg:w-[108px]',
   },
   {
     src: '/assets/pink-bacteria.svg',
     className:
-      'left-[3%] top-[42%] w-16 sm:w-18 md:left-[2%] md:top-[42%] md:w-18 lg:w-20',
+      'left-[2%] top-[43%] w-[92px] sm:left-[3%] sm:w-[102px] md:left-[2%] md:w-[108px] lg:w-[118px]',
   },
   {
     src: '/assets/yellow-bacteria.svg',
     className:
-      'left-[36%] top-[34%] w-20 sm:w-24 md:left-[38%] md:top-[34%] md:w-24 lg:w-26',
+      'left-[38%] top-[29%] w-[112px] sm:left-[39%] sm:w-[124px] md:left-[40%] md:w-[132px] lg:w-[142px]',
   },
   {
     src: '/assets/giardia.svg',
     className:
-      'right-[4%] top-[10%] w-16 sm:w-18 md:right-[2%] md:top-[8%] md:w-18 lg:w-20',
+      'right-[2%] top-[4%] w-[92px] sm:right-[3%] sm:w-[104px] md:right-[2%] md:w-[112px] lg:w-[122px]',
   },
 ];
 
 const bubbles = [
-  'left-[0%] top-[10%] w-2.5',
-  'left-[28%] top-[12%] w-2.5',
-  'left-[18%] top-[58%] w-2.5',
-  'left-[57%] top-[2%] w-2.5',
-  'left-[64%] top-[48%] w-2.5',
-  'right-[26%] top-[6%] w-3',
-  'right-[18%] top-[52%] w-2.5',
-  'right-[0%] top-[18%] w-2.5',
+  'left-[1%] top-[17%] w-2.5 sm:w-3',
+  'left-[27%] top-[12%] w-2.5 sm:w-3',
+  'left-[18%] top-[67%] w-2.5 sm:w-3',
+  'left-[58%] top-[6%] w-2.5 sm:w-3',
+  'left-[66%] top-[57%] w-2.5 sm:w-3',
+  'right-[24%] top-[8%] w-3 sm:w-3.5',
+  'right-[17%] top-[61%] w-2.5 sm:w-3',
+  'right-[0%] top-[23%] w-2.5 sm:w-3',
 ];
 
 export default function ServicesHero() {
   return (
     <section className='relative overflow-hidden bg-white'>
-      <div className='pointer-events-none absolute inset-0'>
-        <div className='absolute -left-24 -top-24 h-[240px] w-[240px] rounded-full bg-[#65b6b7]/10 sm:h-[280px] sm:w-[280px] md:h-[320px] md:w-[320px]' />
-
-        <div className='absolute -left-[5%] top-[34%] h-[90px] w-[52%] rounded-r-[100px] rounded-l-[120px] bg-[#65b6b7]/10 sm:top-[40%] sm:h-[100px] md:top-[46%] md:h-[110px]' />
-
-        <div className='absolute bottom-0 left-0 h-[120px] w-full overflow-hidden sm:h-[130px] md:h-[140px]'>
-          <svg
-            viewBox='0 0 1440 220'
-            preserveAspectRatio='none'
-            className='absolute bottom-0 left-0 h-full w-full'
-            aria-hidden='true'
-          >
-            <path
-              d='
-                M-80 130
-                C90 104 240 112 370 138
-                C505 164 640 170 790 140
-                C930 112 1065 118 1200 146
-                C1305 168 1380 170 1480 134
-                L1480 220
-                L-80 220
-                Z
-              '
-              fill='#65b6b7'
-              opacity='0.12'
-            />
+      <div className='pointer-events-none absolute inset-0 z-0 overflow-hidden' aria-hidden='true'>
+        <div className='absolute -bottom-2 left-0 h-[155px] w-full sm:h-[165px] md:h-[175px] lg:h-[185px]'>
+          <svg viewBox='0 0 1440 240' preserveAspectRatio='none' className='h-full w-full'>
+            <defs>
+              <linearGradient
+                id='services-wave-gradient'
+                x1='0'
+                y1='0'
+                x2='1440'
+                y2='0'
+                gradientUnits='userSpaceOnUse'>
+                <stop offset='0%' stopColor='#65b6b7' stopOpacity='0.17' />
+                <stop offset='43%' stopColor='#e1efee' stopOpacity='0.16' />
+                <stop offset='65%' stopColor='#e8e5f0' stopOpacity='0.18' />
+                <stop offset='100%' stopColor='#9d8cb6' stopOpacity='0.24' />
+              </linearGradient>
+            </defs>
 
             <path
               d='
-                M-90 168
-                C90 144 235 150 380 176
-                C530 202 680 202 842 170
-                C988 142 1120 144 1262 170
-                C1360 188 1428 186 1488 162
-                L1488 220
-                L-90 220
+                M -80 126
+
+                C 70 158, 195 159, 315 142
+                C 435 125, 535 112, 650 132
+                C 760 151, 850 166, 945 157
+
+                C 1030 149, 1095 118, 1160 92
+                C 1230 64, 1305 52, 1380 62
+                C 1440 70, 1490 92, 1540 108
+
+                L 1540 218
+
+                C 1480 207, 1420 192, 1350 183
+                C 1270 173, 1200 174, 1130 188
+
+                C 1050 204, 990 213, 915 207
+                C 825 200, 750 180, 648 166
+                C 535 150, 430 148, 310 166
+                C 180 185, 55 187, -80 158
+
                 Z
               '
-              fill='#9d8cb6'
-              opacity='0.16'
+              fill='url(#services-wave-gradient)'
             />
           </svg>
         </div>
       </div>
 
-      <div className='relative z-10 mx-auto max-w-7xl px-6 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14'>
-        <div className='grid items-center gap-8 md:grid-cols-[40%_60%] lg:gap-10'>
-          <div className='max-w-md text-left'>
-            <h1 className='text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl'>
-              <span className='text-[#18264d]'>Servicios</span>
+      <div className='relative z-10 mx-auto max-w-7xl px-6 pb-5 pt-7 sm:px-8 sm:pb-6 sm:pt-8 md:px-10 md:pb-7 md:pt-8 lg:px-12 lg:pb-8 lg:pt-9'>
+        <div className='grid items-center gap-3 md:grid-cols-[43%_57%] md:gap-2 lg:grid-cols-[45%_55%] lg:gap-2'>
+          <div className='w-full text-center md:text-left'>
+            <h1 className='text-4xl font-bold tracking-[-0.03em] text-[#18264d] sm:text-5xl lg:whitespace-nowrap '>
+              <span className='text-[#18264d]'>Nuestros </span>
+              <span className='text-[#9d8cb6]'>servicios</span>
             </h1>
 
-            <p className='mt-4 max-w-sm text-sm leading-8 text-[#334175] sm:text-base'>
-              Contamos con una amplia gama de estudios clínicos para cuidar de ti y tu familia.
+            <p className='mt-5 max-w-[420px] text-sm leading-7 text-[#334175] sm:text-base sm:leading-8 md:mt-4 md:max-w-[390px] lg:mt-5 lg:max-w-[440px]'>
+              Contamos con una amplia gama de{' '}
+              <span className='font-bold text-[#65b6b7]'>estudios clínicos</span> para cuidar de ti
+              y tu <span className='font-bold text-[#9d8cb6]'>familia.</span>
             </p>
           </div>
 
-          <div className='relative mx-auto h-[220px] w-full max-w-[520px] sm:h-[240px] md:h-[250px] lg:h-[270px]'>
+          <div className='relative z-10 mx-auto h-[220px] w-full max-w-[580px] sm:h-[230px] sm:max-w-[610px] md:h-[240px] md:max-w-[630px] lg:h-[250px] lg:max-w-[660px]'>
             {bubbles.map((className, index) => (
               <Image
                 key={index}
