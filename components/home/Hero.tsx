@@ -49,7 +49,7 @@ export default function Hero() {
               <br className='hidden lg:block' />
               confiables,
               <br />
-              <span className='text-[#9274c2]'>resultados que</span>
+              <span className='text-[#9d8cb6]'>resultados que</span>
               <br />
               <span className='text-[#31afb4]'>cuidan tu salud</span>
             </h1>
