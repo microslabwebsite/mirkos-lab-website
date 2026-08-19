@@ -23,7 +23,7 @@ const directions = [
   },
 ];
 
-const address = 'Pedregoso, 75 m Norte en direccion a San Ramon, Perez Zeledon, Costa Rica.';
+const address = 'Pedregoso, 75 m Norte en dirección a San Ramón, Pérez Zeledón, Costa Rica.';
 
 const mapsUrl =
   'https://www.google.com/maps/search/?api=1&query=Pedregoso+Perez+Zeledon+Costa+Rica+MiKros+Lab';
