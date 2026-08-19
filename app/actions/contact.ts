@@ -3,7 +3,7 @@
 import { Resend } from 'resend';
 import type { ContactFormState } from '@/components/contact/ContactForm';
 
-const CONTACT_TO_EMAIL = 'mickroslabwebsite@gmail.com';
+const CONTACT_TO_EMAIL = 'mikroslaboratorio@gmail.com';
 
 function escapeHtml(value: string) {
   return value
