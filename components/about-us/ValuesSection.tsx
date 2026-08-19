@@ -4,7 +4,7 @@ const values = ['Calidad', 'Confianza', 'Compromiso', 'Respeto', 'Empatía'];
 
 export default function ValuesSection() {
   return (
-    <section className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
+    <section id='valores' className='mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8'>
       <div className='rounded-[30px] border border-slate-100 bg-white px-6 py-10 shadow-[0_12px_45px_rgba(70,70,120,0.07)] md:px-10'>
         <div className='grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-0'>
           <article className='flex flex-col items-center px-6 text-center lg:border-r lg:border-slate-200'>

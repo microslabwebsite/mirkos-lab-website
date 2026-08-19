@@ -30,7 +30,7 @@ const mapsUrl =
 
 export default function Location() {
   return (
-    <div className='grid gap-8 lg:grid-cols-2 lg:items-stretch'>
+    <section id='ubicacion' className='grid gap-8 lg:grid-cols-2 lg:items-stretch'>
       <div className='flex h-full flex-col gap-8'>
         <div className='rounded-2xl border border-slate-100 bg-white p-6 shadow-sm sm:p-8'>
           <div>
@@ -110,6 +110,6 @@ export default function Location() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

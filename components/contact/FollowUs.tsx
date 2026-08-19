@@ -22,7 +22,7 @@ const socialLinks = [
 
 export default function FollowUs() {
   return (
-    <div className='relative h-full min-h-[360px] overflow-hidden rounded-[24px] border border-[#9d8cb6]/10 bg-gradient-to-br from-[#9d8cb6]/10 to-[#65b6b7]/10 p-6 shadow-sm sm:p-8 lg:min-h-full'>
+    <div id='redes' className='relative h-full min-h-[360px] overflow-hidden rounded-[24px] border border-[#9d8cb6]/10 bg-gradient-to-br from-[#9d8cb6]/10 to-[#65b6b7]/10 p-6 shadow-sm sm:p-8 lg:min-h-full'>
       <div className='relative z-20'>
         <h2 className='text-xl font-bold text-[#18264d] sm:text-2xl'>
           Síguenos

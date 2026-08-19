@@ -51,7 +51,7 @@ export default function ExamsPackagesSection({
   }
 
   return (
-    <section className='relative w-full py-14 sm:py-16 lg:py-20'>
+    <section id='perfiles' className='relative w-full py-14 sm:py-16 lg:py-20'>
       <div
         className='pointer-events-none absolute inset-0 overflow-hidden'
         aria-hidden='true'
@@ -148,6 +148,7 @@ export default function ExamsPackagesSection({
             return (
               <div
                 key={profile.id}
+                id={`perfil-${profile.id}`}
                 className='overflow-hidden rounded-2xl border border-[#9d8cb6]/15 bg-white shadow-[0_8px_25px_rgba(24,38,77,0.06)]'
               >
                 <div className='p-6'>

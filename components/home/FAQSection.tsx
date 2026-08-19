@@ -50,7 +50,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className='relative overflow-hidden py-16 sm:py-20'>
+    <section id='preguntas-frecuentes' className='relative overflow-hidden py-16 sm:py-20'>
       <div className='relative z-10 mx-auto max-w-7xl px-5 sm:px-8 lg:px-12'>
         <div className='grid items-center gap-10 lg:grid-cols-[65%_35%] lg:gap-12'>
           <div>

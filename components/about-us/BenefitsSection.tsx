@@ -23,11 +23,9 @@ const benefits = [
   },
 ];
 
-const values = ['Calidad', 'Confianza', 'Compromiso', 'Respeto', 'Empatía'];
-
 export default function BenefitsSection() {
   return (
-    <section className='mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8'>
+    <section id='beneficios' className='mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8'>
       <div className='text-center'>
         <h2 className='text-2xl font-bold text-[#302b64] md:text-3xl'>
           ¿Por qué elegir <span className='text-[#9d8cb6]'>MiKros Lab?</span>

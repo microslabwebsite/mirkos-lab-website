@@ -19,7 +19,7 @@ export default function ContactForm() {
   const [state, formAction, pending] = useActionState(sendContactMessage, initialContactFormState);
 
   return (
-    <div className='relative'>
+    <div id='formulario' className='relative'>
       <div className='relative pr-24 sm:pr-28'>
         <h2 className='text-xl font-bold text-[#18264d] sm:text-2xl'>Envíanos un mensaje</h2>
         <div className='mt-2 h-1 w-12 rounded-full bg-[#9d8cb6]' />

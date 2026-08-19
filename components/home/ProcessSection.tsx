@@ -37,7 +37,7 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className='relative py-10 sm:py-12'>
+    <section id='proceso' className='relative py-10 sm:py-12'>
       <div className='mx-auto max-w-7xl px-5 sm:px-8 lg:px-12'>
         <div className='relative overflow-hidden rounded-[28px] border border-[#9d8cb6]/10 bg-gradient-to-br from-[#65b6b7]/12 to-[#9d8cb6]/15 px-5 py-8 shadow-[0_10px_30px_rgba(157,140,182,0.10)] sm:px-7 sm:py-9 lg:px-9 lg:py-10'>
           <div className='relative z-10'>

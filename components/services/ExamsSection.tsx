@@ -106,7 +106,7 @@ export default function ExamsSection({ search }: ExamsSectionProps) {
   }
 
   return (
-    <section className='relative w-full py-14 sm:py-16 lg:py-20'>
+    <section id='examenes' className='relative w-full py-14 sm:py-16 lg:py-20'>
       <div className='mx-auto max-w-7xl px-5 sm:px-8 lg:px-12'>
         <div className='mb-10 text-center sm:mb-12'>
           <h2 className='text-3xl font-bold text-[#18264d] sm:text-4xl'>
