@@ -22,48 +22,7 @@ export default function ContactForm() {
     <div className='relative'>
       <div className='relative pr-24 sm:pr-28'>
         <h2 className='text-xl font-bold text-[#18264d] sm:text-2xl'>Envíanos un mensaje</h2>
-
         <div className='mt-2 h-1 w-12 rounded-full bg-[#9d8cb6]' />
-
-        <Image
-          src='/assets/pink-bacteria.svg'
-          alt=''
-          width={100}
-          height={100}
-          className='pointer-events-none absolute right-1 top-0 h-auto w-16 sm:right-2 sm:top-1 sm:w-20'
-        />
-
-        <Image
-          src='/assets/bubble.svg'
-          alt=''
-          width={30}
-          height={30}
-          className='pointer-events-none absolute right-20 -top-2 h-auto w-2.5 opacity-65 sm:right-26 sm:-top-1 sm:w-3'
-        />
-
-        <Image
-          src='/assets/bubble.svg'
-          alt=''
-          width={30}
-          height={30}
-          className='pointer-events-none absolute right-4 -top-5 h-auto w-2 opacity-55 sm:right-5 sm:-top-4 sm:w-2.5'
-        />
-
-        <Image
-          src='/assets/bubble.svg'
-          alt=''
-          width={30}
-          height={30}
-          className='pointer-events-none absolute right-23 top-12 h-auto w-2 opacity-60 sm:right-30 sm:top-15 sm:w-2.5'
-        />
-
-        <Image
-          src='/assets/bubble.svg'
-          alt=''
-          width={30}
-          height={30}
-          className='pointer-events-none absolute -right-1 top-17 h-auto w-2.5 opacity-65 sm:right-0 sm:top-19 sm:w-3'
-        />
       </div>
 
       <div className='mt-6'>

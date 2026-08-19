@@ -73,25 +73,25 @@ export default function Footer() {
 
           <div className='mt-6 flex items-center gap-3'>
             <Link
-              href='#'
-              aria-label='Facebook'
-              className='flex h-10 w-10 items-center justify-center rounded-full bg-[#65b6b7] text-white shadow-sm transition hover:-translate-y-1'>
-              <FaFacebookF size={17} />
-            </Link>
-
-            <Link
-              href='#'
-              aria-label='Instagram'
-              className='flex h-10 w-10 items-center justify-center rounded-full bg-[#9d8cb6] text-white shadow-sm transition hover:-translate-y-1'>
-              <FaInstagram size={17} />
-            </Link>
-
-            <Link
               href='https://wa.me/5066312345678'
               target='_blank'
               aria-label='WhatsApp'
-              className='flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#65b6b7] to-[#9d8cb6] text-white shadow-sm transition hover:-translate-y-1'>
+              className='flex h-10 w-10 items-center justify-center rounded-full bg-[#65b6b7] text-white shadow-sm transition hover:-translate-y-1'>
               <FaWhatsapp size={19} />
+            </Link>
+            <Link
+              href='https://www.instagram.com/mikroslaboratorio'
+              target='_blank'
+              aria-label='Instagram'
+              className='flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#65b6b7] to-[#9d8cb6] text-white shadow-sm transition hover:-translate-y-1'>
+              <FaInstagram size={17} />
+            </Link>
+            <Link
+              href='https://www.facebook.com/mikroslab'
+              target='_blank'
+              aria-label='Facebook'
+              className='flex h-10 w-10 items-center justify-center rounded-full bg-[#9d8cb6] text-white shadow-sm transition hover:-translate-y-1'>
+              <FaFacebookF size={17} />
             </Link>
           </div>
         </div>
