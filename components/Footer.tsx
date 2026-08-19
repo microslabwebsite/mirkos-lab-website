@@ -192,7 +192,7 @@ export default function Footer() {
               <div className='flex flex-wrap gap-x-3 text-sm leading-6 text-[#2f3b5f]'>
                 <span className='font-semibold'>Dirección</span>
 
-                <span>Pedregoso, 75 m Norte en direccion a San Ramon, Perez Zeledon.</span>
+                <span>Pedregoso, 75m Norte en dirección a San Ramón, Pérez Zeledón.</span>
               </div>
             </li>
           </ul>

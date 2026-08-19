@@ -7,7 +7,7 @@ const directions = [
     icon: Car,
     title: 'En vehículo',
     description:
-      'Desde San José, tome la Interamericana Sur hacia Pérez Zeledón. Continúe hasta Pedregoso y gire 75 m al norte en dirección a San Ramón.',
+      'Desde San José, tome la Interamericana Sur hacia Pérez Zeledón. Continúe hasta Pedregoso y gire 75m al norte en dirección a San Ramón.',
   },
   {
     icon: House,
