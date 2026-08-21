@@ -117,7 +117,7 @@ export default function ContactHero() {
         </div>
       </div>
 
-      <div className='relative z-10 mx-auto max-w-[1500px] px-5 py-2 sm:px-8 sm:py-3 md:py-4 lg:px-12 lg:py-4 xl:py-5'>
+      <div className='relative z-10 mx-auto w-full max-w-7xl px-5 py-2 sm:px-8 sm:py-3 md:py-4 lg:px-12 lg:py-4  xl:py-5'>
         <div className='grid items-center gap-3 md:grid-cols-[43%_57%] md:gap-2 lg:grid-cols-[45%_55%] lg:gap-2'>
           <div className='relative z-30 w-full text-left'>
             <h1 className='text-4xl font-bold tracking-[-0.03em] text-[#18264d] sm:text-5xl md:text-[44px] lg:text-[52px] xl:text-[58px]'>
@@ -126,14 +126,9 @@ export default function ContactHero() {
 
             <p className='mt-5 max-w-[420px] text-sm leading-7 text-[#334175] sm:text-base sm:leading-8 md:mt-4 md:max-w-[390px] lg:mt-5 lg:max-w-[440px]'>
               por cualquiera de nuestros medios o{' '}
-              <span className='font-bold text-[#65b6b7]'>
-                envíanos tus consultas
-              </span>{' '}
-              completando el formulario.
-              <span className='font-bold text-[#9d8cb6]'>
-                {' '}
-                Estamos aquí para ayudarte.
-              </span>
+              <span className='font-bold text-[#65b6b7]'>envíanos tus consultas</span> completando
+              el formulario.
+              <span className='font-bold text-[#9d8cb6]'> Estamos aquí para ayudarte.</span>
             </p>
           </div>
 

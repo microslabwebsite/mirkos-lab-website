@@ -10,7 +10,7 @@ export default function Contact() {
       <ContactHero />
 
       <section className='relative w-full pb-16 pt-8 sm:pt-10 lg:pb-20'>
-        <div className='mx-auto max-w-[1500px] px-5 sm:px-8 lg:px-12'>
+        <div className='mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12 xl:px-10'>
           <ContactDetails />
 
           <div className='mt-10 flex flex-col gap-10 lg:mt-12 lg:gap-12'>

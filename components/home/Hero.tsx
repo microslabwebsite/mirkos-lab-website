@@ -29,7 +29,7 @@ const benefits = [
 export default function Hero() {
   return (
     <section className='relative overflow-hidden'>
-      <div className='relative z-10 mx-auto max-w-[1500px] px-5 pb-16 pt-4 sm:px-8 sm:pb-20 sm:pt-6 md:pt-8 lg:px-12 lg:pb-8 lg:pt-8'>
+      <div className='relative z-10 mx-auto w-full max-w-7xl px-5 py-2 sm:px-8 sm:py-3 md:py-4 lg:px-12 lg:py-4  xl:py-5'>
         <div className='flex flex-col items-center gap-6 sm:gap-8 lg:grid lg:min-h-[500px] lg:grid-cols-[42%_58%] lg:items-center lg:gap-10'>
           <div className='relative w-full max-w-[260px] min-[360px]:max-w-[280px] sm:max-w-[340px] md:max-w-[400px] lg:order-2 lg:max-w-[520px] xl:max-w-[480px]'>
             <Image

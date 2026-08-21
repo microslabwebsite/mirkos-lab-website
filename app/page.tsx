@@ -5,7 +5,7 @@ import ServicesPreview from '@/components/home/ServicesPreview';
 
 export default function Home() {
   return (
-    <main className='min-h-screen mx-auto max-w-7xl px-6 lg:px-8'>
+    <main className='min-h-screen'>
       <Hero />
       <ServicesPreview/>
       <ProcessSection />
