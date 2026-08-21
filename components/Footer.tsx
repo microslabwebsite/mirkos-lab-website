@@ -73,7 +73,7 @@ export default function Footer() {
 
           <div className='mt-6 flex items-center gap-3'>
             <Link
-              href='https://wa.me/5066312345678'
+              href='https://wa.me/50687595402'
               target='_blank'
               aria-label='WhatsApp'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-[#65b6b7] text-white shadow-sm transition hover:-translate-y-1'>
